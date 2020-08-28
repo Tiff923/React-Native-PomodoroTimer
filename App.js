@@ -1,12 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
+import PomodoroTimer from './components/PomodoroTimer';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+export default class App extends React.Component{
+    
+  render(){
+    console.log('hello')
+    return(
+      <View style={styles.container}>
+        <PomodoroTimer/>
+      </View>
+    )
+  };
 }
 
 const styles = StyleSheet.create({
